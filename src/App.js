@@ -1,8 +1,10 @@
-import './App.css';
+import Main from './layouts/Main';
 
 function App() {
   return (
-    <div className="App"> MakeUp</div>
+    <div className="App">
+      <Main />
+    </div>
   );
 }
 
