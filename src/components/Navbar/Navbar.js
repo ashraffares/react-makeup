@@ -1,10 +1,10 @@
 import React from 'react';
-import './Navbar.css';
+import BrandLink from '../Brand_Link';
 
 const Navbar = () => (
   <nav className="container mx-auto font-krona flex flex-row justify-between py-3">
     {/* Brand */}
-    <a className="text-2xl" href="/">BeautyPink</a>
+    <BrandLink />
 
     <div className="flex items-end lowercase">
       {/* Home */}

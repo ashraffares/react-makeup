@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import BrandLink from '../Brand_Link';
 
 const Footer = () => {
   const links = [
@@ -11,7 +11,7 @@ const Footer = () => {
   ];
   return (
     <footer className="bg-dark text-light flex justify-between p-4">
-      <a className="text-2xl text-yellow font-krona" href="/">BeautyPink</a>
+      <BrandLink classes="text-yellow" />
       <div className="flex items-center">
         {
           links.map((link) => <a href="/" className="ml-4" key={link}>{link}</a>)
