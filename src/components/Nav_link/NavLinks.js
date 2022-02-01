@@ -20,7 +20,7 @@ const NavLinks = () => {
   return (
     <>
       {
-        links.map(({ name, path }) => <NavLink className="text-sm mr-8" key="path" to={path}>{name}</NavLink>)
+        links.map(({ name, path }) => <NavLink className="text-sm mr-8 lowercase" key="path" to={path}>{name}</NavLink>)
       }
     </>
   );
