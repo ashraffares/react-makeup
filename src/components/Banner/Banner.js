@@ -1,6 +1,7 @@
 import React from 'react';
 import LeafImg from './leaf.jpg';
 import './Banner.css';
+import ButtonLink from '../ButttonLink/ButtonLink';
 
 const Banner = () => (
   <div className="flex flex-row my-5 items-center">
@@ -11,7 +12,7 @@ const Banner = () => (
       <p className="text-sm my-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus pariatur nostr!
       </p>
-      <button className="bg-yellow px-6 py-2 rounded-full font-krona text-sm" type="button">See More</button>
+      <ButtonLink text="See More" path="/" />
     </div>
     <div className="w-1/2">
       <img className="leafimg mx-auto rounded-r-lg" src={LeafImg} alt="paste on top of green leaf" />
