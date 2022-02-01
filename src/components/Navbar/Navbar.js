@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import BrandLink from '../Brand_Link';
 
 const Navbar = () => (
@@ -8,11 +9,11 @@ const Navbar = () => (
 
     <div className="flex items-end lowercase">
       {/* Home */}
-      <a className="text-sm mr-8" href="/home">Home</a>
+      <NavLink className="text-sm mr-8" to="/home">Home</NavLink>
       {/* Search */}
-      <a className="text-sm mr-8" href="/search">Search</a>
+      <NavLink className="text-sm mr-8" to="/search">Search</NavLink>
       {/* About */}
-      <a className="text-sm mr-8" href="/about">About</a>
+      <NavLink className="text-sm mr-8" to="/about">About</NavLink>
       {/* Icons */}
       <div className="flex px-2">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
