@@ -2,19 +2,23 @@ import {
   Routes, Route,
 } from 'react-router-dom';
 
-import Main from './layouts/Main';
+import Search from './pages/Search';
 import Home from './pages/Home';
 import About from './pages/About';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
-
-    <Routes className="App">
-      <Route path="/" element={<Main />} exact />
-      <Route path="/home" element={<Home />} exact />
-      <Route path="/about" element={<About />} exact />
-    </Routes>
-
+    <>
+      <Navbar />
+      <Routes className="App">
+        <Route path="/" element={<Home />} exact />
+        <Route path="/search" element={<Search />} exact />
+        <Route path="/about" element={<About />} exact />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

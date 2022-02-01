@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import NavLinks from '../Nav_link/NavLinks';
 import BrandLink from '../Brand_Link';
 
 const Navbar = () => (
@@ -8,13 +8,7 @@ const Navbar = () => (
     <BrandLink />
 
     <div className="flex items-end lowercase">
-      {/* Home */}
-      <NavLink className="text-sm mr-8" to="/home">Home</NavLink>
-      {/* Search */}
-      <NavLink className="text-sm mr-8" to="/search">Search</NavLink>
-      {/* About */}
-      <NavLink className="text-sm mr-8" to="/about">About</NavLink>
-      {/* Icons */}
+      <NavLinks />
       <div className="flex px-2">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
