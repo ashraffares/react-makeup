@@ -12,7 +12,7 @@ const Banner = () => (
       <p className="text-sm my-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus pariatur nostr!
       </p>
-      <ButtonLink text="See More" path="/" />
+      <ButtonLink text="See More" path="/" color="bg-yellow" />
     </div>
     <div className="w-1/2">
       <img className="leafimg mx-auto rounded-r-lg" src={LeafImg} alt="paste on top of green leaf" />
